@@ -1,0 +1,50 @@
+.about-img {
+  width: 302px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+  // -moz-transform: scaleX(-1);
+  //       -o-transform: scaleX(-1);
+  //       -webkit-transform: scaleX(-1);
+  //       transform: scaleX(-1);
+  //       filter: FlipH;
+  //       -ms-filter: "FlipH";
+}
+
+.about-tag {
+  margin-top: 0.5em !important;
+}
+
+.flip-photo {
+  -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+.bio-text {
+  border-radius: 25px;
+  background: rgba(255,255,255, 1);
+  padding: 20px;
+}
+
+.about-btn {
+  margin: 20px;
+}
+
+.fade-enter-active, .fade-leave-active {
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
+
+.scroll-area {
+  position: relative;
+  margin: auto;
+  max-width: 600px;
+  height: 400px;
+}

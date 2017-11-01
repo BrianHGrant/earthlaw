@@ -1,0 +1,37 @@
+<div class="hero" id="practice">
+  <h2 class="center">Payments for Service</h2>
+  <b-row class="justify-content-center">
+    <b-form>
+      <b-form-group id="pay-number"
+                    label="Payment Number:" label-for="pay-number"
+                    description="Payment Number We Provided.">
+        <b-form-input id="pay-number-input"
+                      v-model="pay.number" required
+                      placeholder="Enter number"
+        ></b-form-input>
+      </b-form-group>
+    </b-form>
+  </b-row>
+  <b-row class="justify-content-center">
+    <b-form-group id="pay-amount"
+                  label="Payment Amount:" label-for="pay-amount"
+                  description="Amount of Payment.">
+      <b-form-input id="pay-amount-input"
+                    type="number" v-model="pay.amount" required
+                    placeholder="Amount of Payment"
+      ></b-form-input>
+    </b-form-group>
+  </b-row>
+  <b-row class="justify-content-center">
+  </b-row>
+  <b-row class="justify-content-center">
+    <PayPal
+      :id="pay.email"
+      :amount="pay.amount"
+      currency="USD"
+      dev=True
+      :client="credentials"
+      :invoiceNumber="pay.number">
+    </PayPal>
+  </b-row>
+</div>

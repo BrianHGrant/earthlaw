@@ -1,0 +1,57 @@
+<div class="hero" id="about">
+  <h2 class="center">Courtney Moran is a ...</h2>
+  <b-row>
+    <b-col v-if="!legal.show" md>
+      <b-img v-bind:class="{ 'flip-photo': isActive }" v-bind:src="education.images[0].url" rounded="circle" fluid block thumbnail alt="Courtney Profile Picture" class="about-img flip-photo" v-on:click="education.show = !education.show" /></b-img>
+      <br>
+      <h3 class="center about-tag">Cannabis Counselor and Attorney at Law <span v-if="education.show">and a ...</span></h3>
+    </b-col>
+    <b-col md v-if="education.show">
+      <h3 class="center about-tag">Fearless champion for a sustainable Cannabis hemp industry.</h3>
+      <b-img  v-bind:src="legal.images[0].url" rounded="circle" fluid block thumbnail alt="Hemp History Week Shirt" class="about-img" /></b-img>
+    </b-col>
+    <b-col md v-if="!education.show">
+      <VuePerfectScrollbar v-if="!education.show" class="bio-text scroll-area" v-once :settings="settings" @ps-scroll-y="scrollHanle">
+        <p class="center about-tag" >Courtney grew up in Colgate, Wisconsin and  was valedictorian of Germantown High School.
+          She attended Marquette University in Milwaukee, Wisconsin and earned a Bachelor of Arts in
+          History, with a minor in Biology. <br><br>
+          She earned her Juris Doctorate from St. Thomas University in
+          Minneapolis, Minnesota. During law school, Courtney interned for Keith Stroup at NORML (National Organization for the Reform of Marijuana Laws) a non-profit organization in Washington, D.C.<br><br>
+          In January 2014, Courtney graduated magna cum laude from Lewis and Clark Law School with a Master of Laws in Environmental and Natural Resources Law, with an emphasis in Industrial Hemp Law.<br><br>
+          During her LL.M. program, Courtney participated in and provided legal support for AOSIS at the United Nations FCCC COP 19 in Warsaw, Poland.<br><br>
+          Courtney is the founder of the non-profit Oregon Hemp Industries Association. She developed, organized and presented educational industrial hemp conferences during the 5th, 6th, 7th, and 8th Annual Hemp History Weeks.<br><br>
+          In the Spring of 2015 Courtney's article, <a href="http://www.fordhamelr.org/wp-content/uploads/2015/07/8-Moran-26.3.pdf">Industrial Hemp: Canada Exports, United States Imports</a> was published in the Fordham Environmental Law Review.<br><br>
+          She became a certified OSU Master Gardener Volunteer in November 2016.<br><br>
+        </p>
+      </VuePerfectScrollbar>
+      <div>
+        <b-button :size="lg" :variant="success" class="about-btn" v-on:click="education.show = !education.show; legal.show = !legal.show">
+          Click Here For My Fight for Legal Hemp
+        </b-button>
+      </div>
+    </b-col>
+    <b-col md v-if="legal.show">
+      <VuePerfectScrollbar class="bio-text scroll-area" v-once :settings="settings" @ps-scroll-y="scrollHanle">
+          <h4 class="center about-tag">
+            And She's Made Some Big Wins For Hemp and Patient Rights...
+          </h4>
+          <br>
+          <p class="center about-tag">
+            After moving to Oregon in 2011,<br><br> She practiced criminal defense with a focus on medical marijuana patient defense. During her practice she appealed a county court's decision on behalf of her medical patient client and the...<br><br>
+            <strong>State of Oregon conceded that hashish is medical marijuana</strong>.<br><br>
+            During the 2016 Oregon Legislative Session,<br><br> Courtney authored and successfully lobbied for the passage of <a href="https://olis.leg.state.or.us/liz/2016R1/Downloads/MeasureDocument/HB4060/Enrolled">HB 4060</a>, which amends the Oregon industrial hemp statutes in a manner that protects agricultural interests.<br><br> This bill passed the <strong>Oregon House</strong> with a <strong>vote of 54-4</strong> and passed the <strong>Oregon Senate</strong> unanimously, with a <strong>vote of 25-0</strong>, and was signed into law on March 29, 2016.<br><br>
+            During the <strong>2017</strong> Legislative Session,<br><br> Courtney authored and facilitated the passage of South Carolina industrial hemp legislation, <a href="http://www.scstatehouse.gov/sess122_2017-2018/bills/3559.htm">H 3559</a>, which provides for sustainable implementation of an industrial hemp program by the South Carolina Department of Agriculture.<br><br>
+            Also during the 2017 Legislative session,<br><br> She provided strategic guidance on Alaskan industrial hemp legislation and testified on Alaska <a href="http://www.akleg.gov/basis/Bill/Detail/30?Root=SB%20%20%206">SB 6</a> and Alaska <a href="http://www.akleg.gov/basis/Bill/Detail/30?Root=HB%20172">HB 172</a> before the Alaska Senate Resources Committee, Alaska Senate Judiciary Committee, Alaska Senate Finance Committee,
+            Alaska House Judiciary Committee, and Alaska House Finance Committee.<br><br>
+            Courtney is also co-petitioner of the <a href="https://www.indiegogo.com/projects/relegalizing-industrial-hemp-project-marijuana#/">Relegalizing Industrial Hemp Project</a>, a <a href="http://naihc.org/images/stories/dearulemakingpetition.pdf">formal administrative rulemaking petition</a> to the U.S. Drug Enforcement Agency that will remove industrial hemp from the Controlled Substances Act.
+          </p>
+      </VuePerfectScrollbar>
+      <div>
+        <b-button :size="lg" :variant="success" class="about-btn" v-on:click="legal.show = !legal.show; education.show = !education.show">
+          Click Here For My Educational Background and Other Information
+        </b-button>
+      </div>
+    </b-col>
+
+  </b-row>
+</div>

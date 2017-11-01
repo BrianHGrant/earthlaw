@@ -1,0 +1,14 @@
+<b-container fluid id="app">
+  <!-- the router outlet, where all matched components would ber viewed -->
+  <myheader :company="company"></myheader>
+  <mynav></mynav>
+  <b-row class="justify-content-center summary white-background">
+      <!-- <b-row class="justify-content-center">
+        <b-col md="6"> -->
+          <h2 class="text-center green_text">{{ company.field_company_summary }}</h2>
+        <!-- </b-col>
+      </b-row>
+    </b-col> -->
+  </b-row>
+  <router-view></router-view>
+</b-container>

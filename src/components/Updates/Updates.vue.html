@@ -1,0 +1,12 @@
+<div class="hero" id="updates">
+  <h2 class="center">What's Happening in Hemp</h2>
+  <!-- <b-row class="justify-content-center"> -->
+    <br>
+    <div v-for='update in updates' :key="update.id">
+      <h2 style="clear: left;">{{ update.title }}</h2>
+      <a href="update.link"><b-img :src="update.image" fluid thumbnail alt="update image" class="update-img"></b-img></a>
+      <p>{{ update.body }}<p>
+      <h4 >Posting Date: {{ update.post_date }}</h4>
+    </div>
+  <!-- </b-row> -->
+</div>
