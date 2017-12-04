@@ -1,17 +1,17 @@
 <carousel-3d
   :controls-visible="true"
   :autoplay="true"
-  :width="540"
-  :height="350"
+  :width="500"
+  :height="300"
 >
   <slide v-for="(slide, i) in photos"
   :index="i"
   >
-  <figure>
-        <img :src="slide.image">
-        <figcaption>
-          {{slide.caption}}
-        </figcaption>
-      </figure>
+    <figure>
+          <img :src="slide.image">
+          <figcaption class="green_text heading_text ">
+            {{slide.caption}}
+          </figcaption>
+    </figure>
   </slide>
 </carousel-3d>

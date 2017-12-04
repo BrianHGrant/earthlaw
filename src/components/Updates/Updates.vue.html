@@ -3,10 +3,16 @@
   <!-- <b-row class="justify-content-center"> -->
     <br>
     <div v-for='update in updates' :key="update.id">
-      <h2 style="clear: left;">{{ update.title }}</h2>
+      <b-media>
+        <img slot="aside" :src="update.image" alt="Media Aside" class="update-img"/>
+        <h2>{{ update.title }}</h2>
+        <p>{{ update.body }}</p>
+        <h4 >Posting Date: {{ update.post_date }}</h4>
+      </b-media>
+      <!-- <h2 style="clear: left;">{{ update.title }}</h2>
       <a href="update.link"><b-img :src="update.image" fluid thumbnail alt="update image" class="update-img"></b-img></a>
       <p>{{ update.body }}<p>
-      <h4 >Posting Date: {{ update.post_date }}</h4>
+      <h4 >Posting Date: {{ update.post_date }}</h4> -->
     </div>
   <!-- </b-row> -->
 </div>

@@ -1,17 +1,17 @@
 <div class="hero" id="about">
-  <h2 class="center">Courtney Moran is a ...</h2>
-  <b-row>
-    <b-col v-if="!legal.show" md>
-      <b-img v-bind:class="{ 'flip-photo': isActive }" v-bind:src="education.images[0].url" rounded="circle" fluid block thumbnail alt="Courtney Profile Picture" class="about-img flip-photo" v-on:click="education.show = !education.show" /></b-img>
+  <h2 class="center">Courtney N. Moran</h2>
+  <b-row class="about-row">
+    <b-col v-if="!legal.show" md="6">
+      <b-img v-bind:class="{ 'flip-photo': isActive }" v-bind:src="education.images[0].url" rounded="circle" fluid block thumbnail alt="Courtney Profile Picture" class="about-img w-50 h-75" v-on:click="education.show = !education.show" /></b-img>
       <br>
-      <h3 class="center about-tag">Cannabis Counselor and Attorney at Law <span v-if="education.show">and a ...</span></h3>
+      <h3 class="center about-tag">Cannabis Counselor and Attorney at Law</h3>
     </b-col>
-    <b-col md v-if="education.show">
+    <b-col md="6" v-if="legal.show">
       <h3 class="center about-tag">Fearless champion for a sustainable Cannabis hemp industry.</h3>
-      <b-img  v-bind:src="legal.images[0].url" rounded="circle" fluid block thumbnail alt="Hemp History Week Shirt" class="about-img" /></b-img>
+      <b-img  v-bind:class="{ 'flip-photo': isActive }" v-bind:src="legal.images[0].url" rounded="circle" fluid block thumbnail alt="Hemp History Week Shirt" class="about-img w-50 h-75" /></b-img>
     </b-col>
-    <b-col md v-if="!education.show">
-      <VuePerfectScrollbar v-if="!education.show" class="bio-text scroll-area" v-once :settings="settings" @ps-scroll-y="scrollHanle">
+    <b-col md="6" v-if="!legal.show">
+      <VuePerfectScrollbar v-if="!legal.show" class="bio-text scroll-area" v-once :settings="settings" @ps-scroll-y="scrollHanle">
         <p class="center about-tag" >Courtney grew up in Colgate, Wisconsin and  was valedictorian of Germantown High School.
           She attended Marquette University in Milwaukee, Wisconsin and earned a Bachelor of Arts in
           History, with a minor in Biology. <br><br>
@@ -26,11 +26,11 @@
       </VuePerfectScrollbar>
       <div>
         <b-button :size="lg" variant="success" class="about-btn" v-on:click="education.show = !education.show; legal.show = !legal.show">
-          Click Here For My Fight for Legal Hemp
+          Click Here to Learn More<br> About My Fight for Legal Hemp!
         </b-button>
       </div>
     </b-col>
-    <b-col md v-if="legal.show">
+    <b-col md="6" v-if="legal.show">
       <VuePerfectScrollbar class="bio-text scroll-area" v-once :settings="settings" @ps-scroll-y="scrollHanle">
           <h4 class="center about-tag">
             And She's Made Some Big Wins For Hemp and Patient Rights...
@@ -48,10 +48,13 @@
       </VuePerfectScrollbar>
       <div>
         <b-button :size="lg" variant="success" class="about-btn" v-on:click="legal.show = !legal.show; education.show = !education.show">
-          Click Here For My Educational Background and Other Information
+          Click Here to See Educational<br>and Professional Background!
         </b-button>
       </div>
     </b-col>
+  </b-row>
+  <h2 class="center">Affliations And Memberships</h2>
+  <b-row>
 
   </b-row>
 </div>

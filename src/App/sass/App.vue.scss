@@ -3,26 +3,32 @@
 @import "fonts";
 @import "globals";
 
+body {
+  @include background($background-image);
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  @include background($background-image);
-  height:100vh;
+  margin-left: 1em;
+  margin-right: 1em;
+  // width:100vw;
 }
 
 .trans {
   background: rgba(76, 175, 80, 0.0)
 }
 
-.center {
+.legal-text {
   color: #3B9A45;
-  text-align: center;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
 }
 
-* { box-sizing: border-box; }
+// * { box-sizing: border-box; }
 
 body { font-family: sans-serif; }
 

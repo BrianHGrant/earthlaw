@@ -1,14 +1,14 @@
+@import "mixins";
+.about-row {
+  margin: 15px;
+  @include phones{
+      display: inline;
+  }
+}
+
 .about-img {
-  width: 302px;
-  height: 400px;
   display: block;
   margin: 0 auto;
-  // -moz-transform: scaleX(-1);
-  //       -o-transform: scaleX(-1);
-  //       -webkit-transform: scaleX(-1);
-  //       transform: scaleX(-1);
-  //       filter: FlipH;
-  //       -ms-filter: "FlipH";
 }
 
 .about-tag {

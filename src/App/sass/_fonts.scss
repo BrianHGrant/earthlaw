@@ -1,14 +1,29 @@
-$brand:   'Adamina', serif;
+@import url('https://fonts.googleapis.com/css?family=Lato|Lora');
+
+$brand:  'Lora', serif;
+$text: 'Lato', sans-serif;
 
 .green_text {
-  font-family: $brand;
   color: #3B9A45;
+}
+
+.heading_text {
+  font-family: $brand;
 }
 
 .header_contact {
   text-align: center;
 }
 
-.center {
-  font-family: $brand;
+.sans-serif-text {
+  font-family: $text;
+}
+
+.fa-icon {
+  width: auto;
+  height: 3em; /* or any other relative font sizes */
+
+  /* You would have to include the following two lines to make this work in Safari */
+  max-width: 100%;
+  max-height: 100%;
 }

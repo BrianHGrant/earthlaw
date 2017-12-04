@@ -4,14 +4,19 @@
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import VueRouter from 'vue-router'
+import 'vue-awesome/icons'
 //import the App component
 import App from './App/App'
 //import the vue router
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'bootstrap/dist/css/bootstrap.css'
+import VueObserveVisibility from 'vue-observe-visibility'
 //tell vue to use the router
 Vue.use(VueRouter)
 Vue.use(BootstrapVue)
+Vue.use(VueObserveVisibility)
+import Icon from 'vue-awesome/components/Icon'
+Vue.component('icon', Icon)
 //import the components component
 import Landing from './components/Landing/Landing'
 import About from './components/About/About'
@@ -39,7 +44,10 @@ const routes = [
 // keep it simple for now.
 const router = new VueRouter({
   routes, // short for routes: routes
-  mode: 'history'
+  mode: 'history',
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 200 }
+  }
 })
 //instatinat the vue instance
 new Vue({

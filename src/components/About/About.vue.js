@@ -27,7 +27,7 @@ export default {
         images: [
           {
             "index": "1",
-            "url": require("/Users/briangrant/Desktop/programming/drupal8/earthlawsite/libertatem/images/shirt.jpg")
+            "url": require("/Users/briangrant/Desktop/programming/drupal8/earthlawsite/libertatem/images/shirt_flip.jpg")
           }
         ]
       }

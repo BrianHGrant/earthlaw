@@ -17,7 +17,7 @@ export default {
           "field_street_address": "",
           "field_zipcode": "",
           "field_tag_line": "Environmental Advocate Representing True Hemp",
-          "field_company_summary": "Admitted to Practice in Oregon, Wisconsin and Minnesota"
+          "field_company_summary": "Admitted to Practice in Oregon, Wisconsin, and Minnesota"
         },
         carouselphotos: [
           {
