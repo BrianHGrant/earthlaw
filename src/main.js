@@ -8,8 +8,8 @@ import 'vue-awesome/icons'
 //import the App component
 import App from './App/App'
 //import the vue router
-import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueObserveVisibility from 'vue-observe-visibility'
 //tell vue to use the router
 Vue.use(VueRouter)
