@@ -1,4 +1,6 @@
 import MyCarousel from './MyCarousel/MyCarousel.vue';
+import Icon from 'vue-awesome/components/Icon.vue'
+
 export default {
   name: 'Landing',
   components: {mycarousel: MyCarousel},

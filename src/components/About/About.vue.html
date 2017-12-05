@@ -1,18 +1,18 @@
 <div class="hero" id="about">
-  <h2 class="center">Courtney N. Moran</h2>
+  <h2 class="green_text heading_text">Courtney N. Moran</h2>
   <b-row class="about-row">
     <b-col v-if="!legal.show" md="6">
       <b-img v-bind:class="{ 'flip-photo': isActive }" v-bind:src="education.images[0].url" rounded="circle" fluid block thumbnail alt="Courtney Profile Picture" class="about-img w-50 h-75" v-on:click="education.show = !education.show" /></b-img>
       <br>
-      <h3 class="center about-tag">Cannabis Counselor and Attorney at Law</h3>
+      <h3 class="green_text heading_text about-tag">Cannabis Counselor and Attorney at Law</h3>
     </b-col>
     <b-col md="6" v-if="legal.show">
-      <h3 class="center about-tag">Fearless champion for a sustainable Cannabis hemp industry.</h3>
+      <h3 class="green_text heading_text about-tag">Fearless champion for a sustainable Cannabis hemp industry.</h3>
       <b-img  v-bind:class="{ 'flip-photo': isActive }" v-bind:src="legal.images[0].url" rounded="circle" fluid block thumbnail alt="Hemp History Week Shirt" class="about-img w-50 h-75" /></b-img>
     </b-col>
     <b-col md="6" v-if="!legal.show">
       <VuePerfectScrollbar v-if="!legal.show" class="bio-text scroll-area" v-once :settings="settings" @ps-scroll-y="scrollHanle">
-        <p class="center about-tag" >Courtney grew up in Colgate, Wisconsin and  was valedictorian of Germantown High School.
+        <p class="green_text sans-serif-text about-tag" >Courtney grew up in Colgate, Wisconsin and  was valedictorian of Germantown High School.
           She attended Marquette University in Milwaukee, Wisconsin and earned a Bachelor of Arts in
           History, with a minor in Biology. <br><br>
           She earned her Juris Doctorate from St. Thomas University in
@@ -32,11 +32,11 @@
     </b-col>
     <b-col md="6" v-if="legal.show">
       <VuePerfectScrollbar class="bio-text scroll-area" v-once :settings="settings" @ps-scroll-y="scrollHanle">
-          <h4 class="center about-tag">
-            And She's Made Some Big Wins For Hemp and Patient Rights...
+          <h4 class="green_text heading_text about-tag">
+            She's Made Some Big Wins For Hemp and Patient Rights...
           </h4>
           <br>
-          <p class="center about-tag">
+          <p class="green_text sans-serif-text about-tag">
             After moving to Oregon in 2011,<br><br> She practiced criminal defense with a focus on medical marijuana patient defense. During her practice she appealed a county court's decision on behalf of her medical patient client and the...<br><br>
             <strong>State of Oregon conceded that hashish is medical marijuana</strong>.<br><br>
             During the 2016 Oregon Legislative Session,<br><br> Courtney authored and successfully lobbied for the passage of <a href="https://olis.leg.state.or.us/liz/2016R1/Downloads/MeasureDocument/HB4060/Enrolled">HB 4060</a>, which amends the Oregon industrial hemp statutes in a manner that protects agricultural interests.<br><br> This bill passed the <strong>Oregon House</strong> with a <strong>vote of 54-4</strong> and passed the <strong>Oregon Senate</strong> unanimously, with a <strong>vote of 25-0</strong>, and was signed into law on March 29, 2016.<br><br>
@@ -53,7 +53,7 @@
       </div>
     </b-col>
   </b-row>
-  <h2 class="center">Affliations And Memberships</h2>
+  <h2 class="green_text heading_text">Affliations And Memberships</h2>
   <b-row>
 
   </b-row>
