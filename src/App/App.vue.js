@@ -1,8 +1,8 @@
 import MyHeader from './MyHeader/MyHeader.vue';
-import MyNav from './MyNav/Mynav.vue';
+
 export default {
   name: 'app',
-  components: {myheader: MyHeader, mynav: MyNav},
+  components: {myheader: MyHeader},
     data() {
       return {
         company:

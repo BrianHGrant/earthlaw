@@ -11,7 +11,7 @@ export default {
           "url": require("/Users/briangrant/Desktop/programming/drupal8/earthlawsite/libertatem/images/kentucky2015.jpg")
         },
         {
-          "url": require("/Users/briangrant/Desktop/programming/drupal8/earthlawsite/libertatem/images/leaf.svg")
+          "url": require("/Users/briangrant/Desktop/programming/drupal8/earthlawsite/libertatem/images/marijuana-2754249.svg")
         }
       ]
     }

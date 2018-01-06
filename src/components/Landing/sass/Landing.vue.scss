@@ -7,16 +7,24 @@
 //   max-height: 100%;
 // }
 
-#carousel-col {
-  border-radius: 25px;
-  border: 5px solid #3B9A45;
+.landing-hero {
+  background-color: white !important;
 }
+
+#carousel-col {
+  padding: 0.5em;
+  border-radius: 25px;
+  border: 5px solid #228b22;
+}
+
 
 #tag-line {
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  border-radius: 25px;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 0.5em;
 }
 
-h2 {
-
+.down:hover {
+  color: blue;
 }

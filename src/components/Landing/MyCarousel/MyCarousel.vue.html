@@ -6,11 +6,12 @@
 >
   <slide v-for="(slide, i) in photos"
   :index="i"
+  :key="slide.id"
   >
     <figure>
           <img :src="slide.image">
-          <figcaption class="green_text heading_text ">
-            {{slide.caption}}
+          <figcaption class="green_text heading_text">
+            <strong>{{slide.caption}}</strong>
           </figcaption>
     </figure>
   </slide>

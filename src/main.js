@@ -4,19 +4,15 @@
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import VueRouter from 'vue-router'
-import 'vue-awesome/icons'
 //import the App component
 import App from './App/App'
 //import the vue router
-import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueObserveVisibility from 'vue-observe-visibility'
 //tell vue to use the router
 Vue.use(VueRouter)
 Vue.use(BootstrapVue)
 Vue.use(VueObserveVisibility)
-import Icon from 'vue-awesome/components/Icon'
-Vue.component('icon', Icon)
 //import the components component
 import Landing from './components/Landing/Landing'
 import About from './components/About/About'
@@ -25,6 +21,8 @@ import Updates from './components/Updates/Updates'
 import Update from './components/Updates/Update/Update'
 import Payments from './components/Payments/Payments'
 import Scheduling from './components/Scheduling/Scheduling'
+import Icon from 'vue-svg-icon/Icon.vue';
+Vue.component('icon', Icon);
 
 //define your routes
 const routes = [

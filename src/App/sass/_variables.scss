@@ -1,1 +1,13 @@
-$background-image: '../assets/hemp_quilt.png';
+$background-image: '';
+
+$success: #228b22;
+
+$theme-colors: (
+  "primary": #0074d9,
+  "danger": #ff4136,
+  "brown": #7abaac,
+  "tag-line": #4c3322
+);
+
+
+@import "~bootstrap/scss/bootstrap";
