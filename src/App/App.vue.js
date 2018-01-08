@@ -1,15 +1,16 @@
 import MyHeader from './MyHeader/MyHeader.vue';
+import MyNav from './MyNav/Mynav.vue';
 
 export default {
   name: 'app',
-  components: {myheader: MyHeader},
+  components: {myheader: MyHeader, mynav: MyNav},
     data() {
       return {
         company:
         {
           "title": "EARTHLAW",
           "field_city": "Portland",
-          "field_email_address": "courtney@earthlawllc.com",
+          "field_email_address": "info@earthlawllc.com",
           "field_facebook_link": "https://www.facebook.com/EARTH-Law-LLC-1438632466447159/",
           "field_logo": require("../assets/logo.png"),
           "field_phone": "541-632-HEMP",

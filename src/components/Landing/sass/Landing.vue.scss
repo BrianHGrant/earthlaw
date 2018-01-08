@@ -1,15 +1,4 @@
-// .fa-icon {
-//   width: auto;
-//   height: 3em; /* or any other relative font sizes */
-//
-//   /* You would have to include the following two lines to make this work in Safari */
-//   max-width: 100%;
-//   max-height: 100%;
-// }
-
-.landing-hero {
-  background-color: white !important;
-}
+@import "mixins";
 
 #carousel-col {
   padding: 0.5em;
@@ -17,14 +6,75 @@
   border: 5px solid #228b22;
 }
 
+.main {
+  height: 50vh
+}
 
-#tag-line {
+.tag-line {
+  color: white !important;
   border-radius: 25px;
   margin-left: 2em;
   margin-right: 2em;
   margin-bottom: 0.5em;
+  text-shadow: -1px 0 #000,0 1px #000,1px 0 #000,0 -1px #000;
+
+}
+
+// .tag-line h4 {
+//   // margin-top: 2.5em;
+//   margin-bottom: 2.5em;
+// }
+
+#tag-line-upper {
+  padding-top: 0.5em;
+}
+
+#tag-line-lower {
+  @extend .tag-line;
+  background-image: radial-gradient(ellipse farthest-corner at 45px 45px, rgba(255,255,255, 1) 0%, rgba(255,255,255, 0.8) );
+  color: #228b22 !important;
+  text-shadow: none;
+}
+
+#tag-line h4 {
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .down:hover {
   color: blue;
+}
+
+.agile {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.slide {
+    height: 50vh;
+    // @include phones{
+    //     height: 75vh;
+    // }
+    // background-repeat:no-repeat;
+    // background-size:contain;
+    // background-position:center;
+    color: white;
+    &--1 {
+        background: url("/static/img/carousel/hemp_field.jpg");
+        background-repeat:no-repeat;
+        background-size:contain;
+        background-position:center;
+      }
+    &--2 {
+        background: url("/static/img/carousel/courtney_panal.jpg");
+        background-repeat:no-repeat;
+        background-size:contain;
+        background-position:center;
+    }
+    &--3 {
+        background: url("/static/img/carousel/hb4060.jpg");
+        background-repeat:no-repeat;
+        background-size:contain;
+        background-position:center;
+    }
 }

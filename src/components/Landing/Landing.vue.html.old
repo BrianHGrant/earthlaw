@@ -1,0 +1,25 @@
+<div v-on:scroll="handleScroll">
+  <b-row>
+    <b-col>
+      <div class="hero">
+        <agile :options="options">
+              <b-jumbotron class="slide slide--1">
+                <!-- <h5>Visiting an Oregon Industrial Hemp Farm</h5> -->
+              </b-jumbotron>
+              <b-jumbotron class="slide slide--2">
+                <!-- <h5>National HIA Conference Law and Policy Panel</h5> -->
+              </b-jumbotron>
+              <b-jumbotron class="slide slide--3">
+                <!-- <h5>Oregon Governor Brown signing HB 4060</h5> -->
+              </b-jumbotron>
+        </agile>
+        <b-row>
+          <b-col id="tag-line">
+             <h4 class="green_text sans-serif-text">Courtney N. Moran, LL.M., founding principal of EARTH Law, LLC</h4>
+             <h4 class="green_text sans-serif-text"><i>Leading expert on industrial hemp law, championing legal policy for a sustainable Cannabis hemp industry.</i></h4>
+           </b-col>
+        </b-row>
+      </div>
+    </b-col>
+  </b-row>
+</div>

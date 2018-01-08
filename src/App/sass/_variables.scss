@@ -1,13 +1,17 @@
-$background-image: '';
+$background-image: '/static/img/carousel/hemp_field.jpg';
+$background-image-small-screen: '/static/img/12274415_1521841791459559_6506281098926547824_n.jpg';
+$background-image-phones: '/static/img/AHSG-Wooden Shoe Nursery 2016-1.jpg';
 
 $success: #228b22;
 
 $theme-colors: (
   "primary": #0074d9,
   "danger": #ff4136,
-  "brown": #7abaac,
-  "tag-line": #4c3322
+  "tag-line": #4c3322,
+  "ls-blue":  #75DAFF,
+  "nav-black": #000000
 );
 
+$text-blue: #7abaac;
 
 @import "~bootstrap/scss/bootstrap";

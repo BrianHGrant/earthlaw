@@ -1,7 +1,6 @@
-import MyNav from '../MyNav/Mynav.vue';
 
 export default {
-  components: {mynav: MyNav},
+  components: {},
   name: 'my-header',
   props: ['company']
 }

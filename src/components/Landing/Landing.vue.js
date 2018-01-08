@@ -5,7 +5,33 @@ export default {
   components: {mycarousel: MyCarousel},
   data() {
     return {
-      icon: require("/Users/briangrant/Desktop/programming/earthlaw/assets/blue_check.svg")
+      icon: require("/Users/briangrant/Desktop/programming/earthlaw/assets/blue_check.svg"),
+      options: {
+            dots: false,
+            arrows: false,
+            speed: 750,
+            timing: "linear",
+            fade: true,
+            autoplay: true,
+            pauseOnHover: false,
+            // responsive: [
+            //     {
+            //         breakpoint: 600,
+            //         settings: {
+            //             dots: false
+            //         }
+            //     },
+            //
+            //     {
+            //         breakpoint: 900,
+            //         settings: {
+            //             arrows: true,
+            //             dots: true,
+            //             infinite: false
+            //         }
+            //     }
+            // ]
+        }
     }
   },
   methods: {

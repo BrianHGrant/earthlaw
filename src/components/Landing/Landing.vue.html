@@ -1,18 +1,36 @@
 <div v-on:scroll="handleScroll">
-  <b-row>
+  <b-row class="main">
     <b-col>
-      <div class="hero landing-hero">
+      <div class="hero">
         <b-row>
-          <b-col md>
-            <mycarousel id="top-carousel"></mycarousel>
-          </b-col md>
-          <b-col id="tag-line">
-            <h4 class="green_text sans-serif-text">Courtney N. Moran, LL.M., founding principal of EARTH Law, LLC</h4>
-            <b-img center :src="icon" width="100" height="100" alt="placeholder" rounded="circle"/>
-            <h4 class="green_text sans-serif-text">The leading expert on industrial hemp law, championing legal policy for a sustainable Cannabis hemp industry</h4>
-          </b-col>
+
+          <b-col class="tag-line" id="tag-line-upper">
+
+             <h3 v-animate-css="'fadeInUp'" class="sans-serif-text">Courtney N. Moran, LLM</h3>
+               <h3 v-animate-css="{
+      classes: 'fadeInUp',
+      delay: 1000,
+      duration: 1000,
+      }" class="sans-serif-text">Founding principal of EARTH Law, LLC</h3>
+
+           </b-col>
         </b-row>
       </div>
     </b-col>
   </b-row>
+  <b-row>
+    <b-col class="tag-line">
+      <h3 v-animate-css="{
+classes: 'fadeInUp',
+delay: 2000,
+duration: 1000,
+}" class="sans-serif-text"><i>Leading expert on industrial hemp law.</i></h3>
+      <h3 v-animate-css="{
+classes: 'fadeInUp',
+delay: 3000,
+duration: 1000,
+}" class="sans-serif-text"><i>Championing legal policy for a sustainable Cannabis hemp industry.</i></h3>
+    </b-col>
+  </b-row>
+
 </div>

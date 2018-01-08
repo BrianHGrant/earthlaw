@@ -1,7 +1,11 @@
 <b-container fluid id="app">
   <!-- the router outlet, where all matched components would ber viewed -->
-  <myheader :company="company"></myheader>
-  <b-row class="justify-content-center summary white-background">
+  <div class="top-matter">
+    <myheader :company="company"></myheader>
+  </div>
+  <mynav></mynav>
+
+  <b-row class="justify-content-center summary">
       <!-- <b-row class="justify-content-center">
         <b-col md="6"> -->
           <h4 class="sans-serif-text legal-text">{{ company.field_company_summary }}</h4>

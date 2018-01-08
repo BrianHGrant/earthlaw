@@ -1,33 +1,75 @@
-#top-carousel {
-  margin-top: 0;
-}
-
-.carousel-3d-slide {
-  border-radius: 2em;
-  border: 10px solid #228b22;
-}
-
-.carousel-3d-container figure {
-  margin:0;
-}
-
-.carousel-3d-container figcaption {
-  position: absolute;
-  text-align: center;
-  background-image: radial-gradient(ellipse farthest-corner at 45px 45px, rgba(255,255,255, 1) 0%, rgba(255,255,255, 0.6) );
-  bottom: 0;
-  padding: 15px;
-  font-size: 15px;
-  min-width: 100%;
-  box-sizing: border-box;
-}
-
-.next {
-  color: #2da02d !important;
-  font-weight: bold;
-}
-
-.prev {
-  color: #2da02d !important;
-  font-weight: bold;
-}
+//
+// #top-carousel {
+//   margin-top: 0;
+// }
+//
+// // .carousel-3d-slide {
+// //   border-radius: 2em;
+// //   border: 10px solid #228b22;
+// // }
+// //
+// // .carousel-3d-container figure {
+// //   margin:0;
+// // }
+// //
+// // .carousel-3d-container figcaption {
+// //   position: absolute;
+// //   text-align: center;
+// //   background-image: radial-gradient(ellipse farthest-corner at 45px 45px, rgba(255,255,255, 1) 0%, rgba(255,255,255, 0.6) );
+// //   bottom: 0;
+// //   padding: 15px;
+// //   font-size: 15px;
+// //   min-width: 100%;
+// //   box-sizing: border-box;
+// // }
+// //
+// // .next {
+// //   color: #2da02d !important;
+// //   font-weight: bold;
+// // }
+//
+// // .prev {
+// //   color: #2da02d !important;
+// //   font-weight: bold;
+// // }
+// .agile {
+//     &__dots {
+//         bottom: 0;
+//         display: block;
+//         left: 10px;
+//         position: absolute;
+//         width: 30px;
+//     }
+//
+//     &__dot {
+//         margin-bottom: 10px;
+//
+//         button {
+//             background-color: transparent;
+//             border: 1px solid #fff;
+//             margin-top: 10px;
+//
+//             &:hover {
+//                 background-color: #fff;
+//             }
+//         }
+//
+//         &--current {
+//             button {
+//                 background-color: #fff;
+//             }
+//         }
+//     }
+// }
+//
+// .slide {
+//     background: {
+//         position: center;
+//         size: cover;
+//     }
+//     height: 500px;
+//
+//     &--1 {
+//         background-image: url();
+//     }
+// }

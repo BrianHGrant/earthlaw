@@ -1,8 +1,8 @@
 <div class="hero" id="about">
-  <h2 class="green_text heading_text">Courtney N. Moran</h2>
+  <h2 class="green_text">Courtney N. Moran</h2>
   <b-row class="about-row">
     <b-col v-if="!legal.show" md="6">
-      <b-img v-bind:class="{ 'flip-photo': isActive }" v-bind:src="education.images[0].url" rounded="circle" fluid block thumbnail alt="Courtney Profile Picture" class="about-img w-50 h-75" v-on:click="education.show = !education.show" /></b-img>
+      <b-img v-bind:class="{ 'flip-photo': isActive }" v-bind:src="education.images[0].url" thumbnail alt="Courtney Profile Picture" class="about-img w-50 h-75" v-on:click="education.show = !education.show" /></b-img>
       <br>
       <h3 class="green_text heading_text about-tag">Cannabis Counselor and Attorney at Law</h3>
     </b-col>

@@ -1,7 +1,7 @@
 @import "mixins";
 
 .header {
-  width:100vw  !important;
+  // width:100vw  !important;
   padding-top: 2%;
   padding-right: 6%;
 }
@@ -14,6 +14,7 @@
   margin-top: 0.8em;
 }
 
-.tag_line {
+.comp-tag-line {
   font-weight: 900px;
+  color: #A55D35;
 }

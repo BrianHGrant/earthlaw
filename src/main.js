@@ -10,6 +10,11 @@ import App from './App/App'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueObserveVisibility from 'vue-observe-visibility'
 //tell vue to use the router
+import VueAgile from 'vue-agile'
+import VAnimateCss from 'v-animate-css';
+
+Vue.use(VAnimateCss);
+Vue.use(VueAgile)
 Vue.use(VueRouter)
 Vue.use(BootstrapVue)
 Vue.use(VueObserveVisibility)

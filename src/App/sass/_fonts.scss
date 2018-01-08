@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Lora');
+@import url("https://fonts.googleapis.com/css?family=Lato|Merriweather|Alegreya+Sans");
 
-$brand:  'Lora', serif;
-$text: 'Lato', sans-serif;
+$brand:  'Alegreya', sans-serif;
+$text: 'Lato', serif;
 
 .green_text {
   color: #228b22;
@@ -17,7 +17,8 @@ $text: 'Lato', sans-serif;
 }
 
 .sans-serif-text {
-  font-family: $text;
+  font-family: $brand;
+  font-weight: bold;
 }
 
 .fa-icon {
